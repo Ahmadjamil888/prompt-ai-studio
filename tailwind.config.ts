@@ -57,6 +57,21 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        pipeline: {
+          glow: "hsl(var(--pipeline-glow))",
+          surface: "hsl(var(--pipeline-surface))",
+          "surface-hover": "hsl(var(--pipeline-surface-hover))",
+          "border-subtle": "hsl(var(--pipeline-border-subtle))",
+          "text-dim": "hsl(var(--pipeline-text-dim))",
+        },
+        status: {
+          initializing: "hsl(var(--status-initializing))",
+          designing: "hsl(var(--status-designing))",
+          training: "hsl(var(--status-training))",
+          deploying: "hsl(var(--status-deploying))",
+          deployed: "hsl(var(--status-deployed))",
+          failed: "hsl(var(--status-failed))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,20 +80,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
